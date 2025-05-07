@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,6 +55,23 @@
       text-decoration: none;
       font-weight: bold;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .audio-section {
+      margin-top: 3rem;
+    }
+    audio {
+      width: 100%;
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -65,25 +81,46 @@
   </header>
   <section>
     <h2>Private Music Lessons</h2>
-    <p>I teach piano, guitar, and bass with a focus on authenticity, feel, and musical identity. My goal is to help students of all ages not just play songs—but understand the music and feel it in their bones. Blues, gospel, boogie-woogie... the real stuff.</p>
+    <p>I teach piano, guitar, and bass with a focus on authenticity, feel, and musical identity. My goal is to help students of all ages not just play songs—but understand the music and feel it in their bones. Blues, gospel, boogie-woogie... the real stuff.</p><h2>What I Offer</h2>
+<ul>
+  <li>One-on-one lessons in a dedicated home studio</li>
+  <li>Weekly hour-long sessions</li>
+  <li>Personalized instruction rooted in real-world experience</li>
+  <li>Supportive, no-fluff environment—focused on growth and groove</li>
+</ul>
 
-    <h2>What I Offer</h2>
-    <ul>
-      <li>One-on-one lessons in a dedicated home studio</li>
-      <li>Weekly hour-long sessions</li>
-      <li>Personalized instruction rooted in real-world experience</li>
-      <li>Supportive, no-fluff environment—focused on growth and groove</li>
-    </ul>
+<div class="cta">
+  Booking Now for Fall 2025!<br>
+  Limited spots available. Contact me today.
+</div>
 
-    <div class="cta">
-      Booking Now for Fall 2025!<br>
-      Limited spots available. Contact me today.
-    </div>
+<h2>Photos</h2>
+<div class="gallery">
+  <img src="https://chrisnashpiano.github.io/ChrisNashMusic/img1.jpg" alt="Live band performance">
+  <img src="https://chrisnashpiano.github.io/ChrisNashMusic/img2.jpg" alt="Outdoor guitar gig">
+  <img src="https://chrisnashpiano.github.io/ChrisNashMusic/img3.jpg" alt="Chris smiling at keys">
+  <img src="https://chrisnashpiano.github.io/ChrisNashMusic/img4.jpg" alt="Chris performing on keyboard">
+  <img src="https://chrisnashpiano.github.io/ChrisNashMusic/img5.jpg" alt="Close-up at piano">
+</div>
 
-    <div class="contact">
-      <p>Text or call: <a href="tel:6019619893">601-961-9893</a></p>
-      <p>Message: <a href="https://instagram.com/chrisnashmusic" target="_blank">@chrisnashmusic</a></p>
-    </div>
+<div class="audio-section">
+  <h2>Listen</h2>
+  <p><strong>Chalmers Boogie</strong></p>
+  <audio controls src="chalmers.wav"></audio>
+
+  <p><strong>Mario Theme</strong></p>
+  <audio controls src="mario.wav"></audio>
+
+  <p><strong>Sirocco's Roar</strong></p>
+  <audio controls src="sirocco.wav"></audio>
+</div>
+
+<div class="contact">
+  <p>Text or call: <a href="tel:6019619893">601-961-9893</a></p>
+  <p>Email: <a href="mailto:chris.piano.nash@gmail.com">chris.piano.nash@gmail.com</a></p>
+  <p>Message: <a href="https://instagram.com/chrisnashmusic" target="_blank">@chrisnashmusic</a></p>
+</div>
+
   </section>
 </body>
 </html>
